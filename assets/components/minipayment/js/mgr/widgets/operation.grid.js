@@ -113,7 +113,7 @@ miniPayment.window.UpdateOperation = function(config) {
 	config = config || {};
 	this.ident = config.ident || 'meuitem'+Ext.id();
 	Ext.applyIf(config,{
-		title: _('minipayment.operation_update')
+		title: _('minipayment.operation_view')
 		,id: this.ident
 		,height: 150
 		,width: 475

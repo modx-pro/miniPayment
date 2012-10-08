@@ -28,7 +28,7 @@ $_lang['minipayment.operation_err_save'] = 'Ошибка при сохранен
 $_lang['minipayment.operation_remove'] = 'Удалить платеж';
 $_lang['minipayment.operation_remove_confirm'] = 'Вы уверены, что хотите удалить этот платеж?';
 $_lang['minipayment.operation_update'] = 'Изменить платеж';
-$_lang['minipayment.operation_view'] = 'Просмотреть платеж';
+$_lang['minipayment.operation_view'] = 'Просмотр платежа';
 $_lang['minipayment.operation_view_user'] = 'Страница пользователя';
 $_lang['minipayment.operation_intro_msg'] = 'Управляйте вашими платежами';
 
