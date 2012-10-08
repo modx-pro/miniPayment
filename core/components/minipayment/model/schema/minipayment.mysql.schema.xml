@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="minipayment" baseClass="xPDOObject" platform="mysql" defaultEngine="MyISAM" version="1.1">
+	<object class="mpMethod" table="minipayment_method" extends="xPDOSimpleObject">
+		<field key="name" dbtype="varchar" precision="255" phptype="string" null="false" index="unique" />
+		<field key="description" dbtype="text" phptype="string" null="true" />
+		<field key="send" dbtype="int" precision="11" phptype="integer" null="false" />
+		<field key="receive" dbtype="int" precision="11" phptype="integer" null="false" />
+		<field key="active" dbtype="tinyint" precision="1" phptype="integer" null="false" default="1" />
+
+		<index alias="name" name="name" primary="false" unique="true" type="BTREE" >
+			<column key="name" length="" collation="A" null="false" />
+		</index>
+	</object>
+	<object class="mpOperation" table="minipayment_operation" extends="xPDOSimpleObject">
+		<field key="uid" dbtype="int" precision="11" phptype="integer" null="false" default="0" />
+		<field key="method" dbtype="int" precision="11" phptype="integer" null="false" default="0" />
+		<field key="sum" dbtype="float" precision="10,2" phptype="float" null="false" default="0.00" />
+		<field key="status" dbtype="int" precision="11" phptype="integer" null="false" default="0" />
+		<field key="createdon" dbtype="datetime" phptype="datetime" null="false" default="0000-00-00 00:00:00" />
+		<field key="updatedon" dbtype="datetime" phptype="datetime" null="false" default="0000-00-00 00:00:00" />
+		<field key="description" dbtype="text" phptype="string" null="true" />
+		<field key="data" dbtype="text" phptype="string" null="true" />
+	</object>
+	<object class="mpStatus" table="minipayment_status" extends="xPDOSimpleObject">
+		<field key="name" dbtype="varchar" precision="255" phptype="string" null="false" index="unique" />
+		<field key="description" dbtype="text" phptype="string" null="true" />
+		<field key="color" dbtype="varchar" precision="50" phptype="string" null="false" />
+
+		<index alias="name" name="name" primary="false" unique="true" type="BTREE" >
+			<column key="name" length="" collation="A" null="false" />
+		</index>
+	</object>
+</model>

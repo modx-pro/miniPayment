@@ -1,0 +1,6 @@
+Changelog for miniPayment.
+
+
+1.0.0-pl (08.10.2012)
+==============
+- Initial release.
