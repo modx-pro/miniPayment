@@ -27,11 +27,11 @@ if ($object->xpdo) {
 			$modx =& $object->xpdo;
 
 			/* setup paths */
-			createSetting($modx,'core_path',$modx->getOption('core_path').'components/minipayment/');
-			createSetting($modx,'assets_path',$modx->getOption('assets_path').'components/minipayment/');
+			//createSetting($modx,'core_path',$modx->getOption('core_path').'components/minipayment/');
+			//createSetting($modx,'assets_path',$modx->getOption('assets_path').'components/minipayment/');
 
 			/* setup urls */
-			createSetting($modx,'assets_url',$modx->getOption('assets_url').'components/minipayment/');
+			//createSetting($modx,'assets_url',$modx->getOption('assets_url').'components/minipayment/');
 		break;
 	}
 }
