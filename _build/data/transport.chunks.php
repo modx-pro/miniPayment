@@ -18,7 +18,7 @@ $chunks[0]->fromArray(array(
 $chunks[1]= $modx->newObject('modChunk');
 $chunks[1]->fromArray(array(
 	'id' => 0,
-	'name' => 'tpl.Payment.row',
+	'name' => 'tpl.Payment.method.row',
 	'description' => 'Chunk for templatimg one payment method in form',
 	'snippet' => file_get_contents($sources['source_core'].'/elements/chunks/method_row.chunk.tpl'),
 ),'',true,true);
